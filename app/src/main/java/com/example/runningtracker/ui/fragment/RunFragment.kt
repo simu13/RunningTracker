@@ -18,7 +18,7 @@ import pub.devrel.easypermissions.AppSettingsDialog
 import pub.devrel.easypermissions.EasyPermissions
 
 @AndroidEntryPoint
-class RunFragment:Fragment(R.layout.fragment_run) {
+class RunFragment:Fragment(R.layout.fragment_run),EasyPermissions.PermissionCallbacks{
     private val viewModel :MainViewModel by viewModels()
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
