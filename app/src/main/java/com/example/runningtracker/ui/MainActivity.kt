@@ -9,11 +9,10 @@ import android.os.Bundle
 import android.view.View
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.setupWithNavController
-import com.example.runningtracker.Constants.ACTION_SHOW_TRACKING_FRAGMENT
+import com.example.runningtracker.other.Constants.ACTION_SHOW_TRACKING_FRAGMENT
 import com.example.runningtracker.R
-import com.example.runningtracker.db.RunDAO
 import kotlinx.android.synthetic.main.activity_main.*
-import javax.inject.Inject
+
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 

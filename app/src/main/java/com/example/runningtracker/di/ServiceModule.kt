@@ -4,7 +4,7 @@ import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
 import androidx.core.app.NotificationCompat
-import com.example.runningtracker.Constants
+import com.example.runningtracker.other.Constants
 import com.example.runningtracker.R
 import com.example.runningtracker.ui.MainActivity
 import com.google.android.gms.location.FusedLocationProviderClient

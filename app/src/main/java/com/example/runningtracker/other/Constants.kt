@@ -1,4 +1,4 @@
-package com.example.runningtracker
+package com.example.runningtracker.other
 
 import android.graphics.Color
 
