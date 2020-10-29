@@ -7,11 +7,11 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
-import com.example.runningtracker.Constants
-import com.example.runningtracker.Constants.ACTION_PAUSE_SERVICE
-import com.example.runningtracker.Constants.ACTION_STATE_OR_RESUME
-import com.example.runningtracker.Constants.ACTION_STOP_SERVICE
-import com.example.runningtracker.Constants.MAP_ZOOM
+import com.example.runningtracker.other.Constants
+import com.example.runningtracker.other.Constants.ACTION_PAUSE_SERVICE
+import com.example.runningtracker.other.Constants.ACTION_STATE_OR_RESUME
+import com.example.runningtracker.other.Constants.ACTION_STOP_SERVICE
+import com.example.runningtracker.other.Constants.MAP_ZOOM
 import com.example.runningtracker.MainViewModel
 import com.example.runningtracker.R
 import com.example.runningtracker.db.Run
@@ -23,10 +23,10 @@ import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.model.LatLngBounds
 import com.google.android.gms.maps.model.PolylineOptions
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.fragment_tracking.*
 import java.util.*
+import javax.inject.Inject
 import kotlin.math.round
 
 @AndroidEntryPoint
@@ -36,7 +36,8 @@ class TrackingFragment:Fragment(R.layout.fragment_tracking) {
     private var pathPoints = mutableListOf<Polyline>()
     private var map:GoogleMap?=null
     private var curTimeInMillis = 0L
-    private var weight = 80f
+    @set:Inject
+    var weight = 80f
 
     private var menu: Menu?=null
 
