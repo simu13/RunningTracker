@@ -19,4 +19,8 @@ object Constants {
      const val LOCATION_UPDATE_TIME = 5000L
      const val FASTEST_UPDATE_TIME = 2000L
      const val TIMER_UPDATE_INTERVAL = 50L
+     const val SHARED_PREFERENCE_NAME = "sharedPref"
+     const val KEY_FIRST_TIME_TOGGLE = "KEY_FIRST_TIME_TOGGLE"
+     const val KEY_NAME = "KEY_NAME"
+     const val KEY_WEIGHT = "KEY_WEIGHT"
 }
